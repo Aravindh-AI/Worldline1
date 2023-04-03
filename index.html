@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Database</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Student Database</h1>
+    <form name="studentForm" onsubmit="return validateForm()" method="post">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required><br>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required><br>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Please select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br>
+
+      <label for="addressLine1">Address Line 1:</label>
+      <input type="text" id="addressLine1" name="addressLine1" required><br>
+
+      <label for="addressLine2">Address Line 2:</label>
+      <input type="text" id="addressLine2" name="addressLine2"><br>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required><br>
+
+      <label for="state">State/Province:</label>
+      <input type="text" id="state" name="state" required><br>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
